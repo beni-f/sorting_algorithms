@@ -6,6 +6,7 @@
  * @array: pointer to an array
  * @low: the first entry of the array
  * @high: the last entry of the array
+ * @size: size of the array
  *
  * Return: Returns the index of the sorted array position
 */
@@ -26,7 +27,7 @@ int partition(int *array, int low, int high, size_t size)
 							array[i] = array[j];
 							array[j] = temp;
 							print_array(array, size);
-					}	
+					}
 			}
 	}
 	if (array[high] < array[i + 1])
@@ -36,7 +37,7 @@ int partition(int *array, int low, int high, size_t size)
 		array[high] = temp;
 		print_array(array, size);
 	}
-	
+
 	return (i + 1);
 }
 /**
