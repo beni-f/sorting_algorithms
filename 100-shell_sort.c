@@ -1,0 +1,9 @@
+#include <stdio.h>
+#include "sort.h"
+
+void shell_sort(int *array, size_t size)
+{
+    int gap;
+
+    for(gap = )
+}
